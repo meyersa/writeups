@@ -1,7 +1,33 @@
-import Layout from '../components/layout/layout.js';
-import Header from '../components/header/header.js';
-
+import Head from 'next/head';
+import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
+import Link from 'next/link';
+import Date from '../components/date';
+import Header from '../components/header'
+
+export default function Home({ allPostsData }) {
+  return (
+    <Layout home>
+      <Head>
+      </Head>
+
+      <section>
+        <h2>Blog</h2>
+        <ul>
+          {allPostsData.map(({ id, date, title }) => (
+            <li key={id}>
+              <Link href={`/posts/${id}`}>{title}</Link>
+              <br />
+              <small>
+                <Date dateString={date} />
+              </small>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </Layout>
+  );
+}
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -10,26 +36,4 @@ export async function getStaticProps() {
       allPostsData,
     },
   };
-}
-
-export default function Home({ allPostsData }) {
-  return (
-    <div>
-      <Header />
-      <Layout var="Home">
-        <h1>Hi</h1>
-        <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
-          ))}
-        </ul>
-      </Layout>
-    </div>
-  );
 }
