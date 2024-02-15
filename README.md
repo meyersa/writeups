@@ -14,3 +14,5 @@ So I can have a better understanding of what I've done by explaining it
 2. Use nextjs mdx to read and convert the markdown files into static pages 
 3. Have a generic styling that is applied to the markdown pages
 4. Auto-re-build the image when new pushes are made 
+
+https://github.com/vercel/next-learn/blob/main/basics/api-routes-starter/components/layout.js
