@@ -7,10 +7,10 @@ export default function Header() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        <h1>Writeups.Meyersa.Com</h1>
+        <Link href="/"><h1>Writeups.Meyersa.Com</h1></Link>
       </div>
       <div className={styles.right}>
-
+        <p>Writeups of technical adventures</p>
       </div>
     </div>
   );

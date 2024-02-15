@@ -1,24 +1,29 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from './layout.module.css';
+import Header from '../components/header';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export var siteTitle = 'Meyersa Writeups';
 
 export default function Layout({ children, data }) {
   if (!Object.is(data, null)) {
+    if (data.length > 10) {
+      siteTitle = data.slice(10) + siteTitle;
+
+    }
     siteTitle = data;
 
   }
 
+
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content={siteTitle} key="title" />
         <title>{siteTitle}</title>
       </Head>
-      <header className={styles.header}></header>
+      <Header />
       <main>{children}</main>
     </div>
   );
