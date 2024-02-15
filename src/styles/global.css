@@ -17,8 +17,9 @@ html {
     background: var(--white);
     font-family: "Anonymous Pro", monospace;
     color: var(--dark-grey);
-    
+
 }
+
 h1 {
     color: var(--orange);
 

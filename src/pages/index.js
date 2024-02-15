@@ -7,16 +7,15 @@ import Header from '../components/header'
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
-      <Head>
-      </Head>
+    <Layout>
+      <Header />
 
       <section>
         <h2>Blog</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`${id}`}>{title}</Link>
               <br />
               <small>
                 <Date dateString={date} />
