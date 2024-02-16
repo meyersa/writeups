@@ -7,7 +7,7 @@ export var siteTitle = 'Meyersa Writeups';
 
 export default function Layout({ children, data }) {
   if (!Object.is(data, null)) {
-    if (data.length > 10) {
+    if (String(data).length > 10) {
       siteTitle = data.slice(10) + siteTitle;
 
     }
