@@ -47,13 +47,13 @@ li {
 
 }
 li a {
-    padding-bottom: 1.25rem;
+    font-size: 1.25rem;
+    text-decoration: inherit;
+    line-height: 2rem;
 
 }
 a {
-    font-size: 1.25rem;
-    /* text-decoration: inherit; */
-    color: inherit;
+    color: var(--orange);
 
 }
 time { 

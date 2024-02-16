@@ -15,9 +15,7 @@ export default function Home({ allPostsData }) {
             <li key={id}>
               <Link href={`${id}`}>{title}</Link>
               <br />
-              <small>
-                <Date dateString={date} />
-              </small>
+              <Date dateString={date} />
             </li>
           ))}
         </ul>
