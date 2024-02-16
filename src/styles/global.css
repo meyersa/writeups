@@ -12,7 +12,7 @@
 
 }
 
-html {
+html, body {
     margin: 0;
     padding: 0;
     background: var(--white);
@@ -20,6 +20,7 @@ html {
     color: var(--dark-grey);
 
 }
+
 
 h1 {
     color: var(--orange);
