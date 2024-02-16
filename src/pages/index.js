@@ -8,7 +8,7 @@ import Header from '../components/header'
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <section>
+      <div className="content">
         <h2>Blog</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
@@ -21,7 +21,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
+      </div>
     </Layout>
   );
 }

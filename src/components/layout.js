@@ -6,7 +6,8 @@ import Image from 'next/image';
 export var siteTitle = 'Meyersa Writeups';
 
 export default function Layout({ children, data }) {
-  if (!Object.is(data, null)) {
+  if (!Object.is(data, null) && data != undefined) {
+    console.log(String(data))
     if (String(data).length > 10) {
       siteTitle = data.slice(10) + siteTitle;
 

@@ -23,7 +23,7 @@ html {
 
 h1 {
     color: var(--orange);
-
+    text-decoration: inherit;
 }
 
 Link {
@@ -31,4 +31,30 @@ Link {
     color: inherit;
 
     
+}
+
+.content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 80vw;
+    margin: auto;
+    
+}
+
+li { 
+    padding-bottom: 2rem;
+
+}
+li a {
+    padding-bottom: 1.25rem;
+
+}
+a {
+    font-size: 1.25rem;
+    /* text-decoration: inherit; */
+    color: inherit;
+
+}
+time { 
+    font-size: 1rem;
 }
