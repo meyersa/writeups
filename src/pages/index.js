@@ -8,8 +8,6 @@ import Header from '../components/header'
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <Header />
-
       <section>
         <h2>Blog</h2>
         <ul>
