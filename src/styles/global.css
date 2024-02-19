@@ -9,7 +9,15 @@
     --dark-grey: #575148;
     --white: #fff;
     --width: 90vw;
+    --flex-direction: row;
 
+}
+
+@media (max-width: 600px) {
+    :root {
+        --flex-direction: column; 
+
+    }
 }
 
 ::selection {
@@ -34,7 +42,8 @@ h1 {
 }
 h2 {
     text-decoration: inherit; 
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+
 }
 
 Link {
