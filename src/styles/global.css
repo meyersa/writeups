@@ -12,6 +12,11 @@
 
 }
 
+::selection {
+    background: var(--orange);
+    color: var(--white);
+
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -25,6 +30,11 @@ html, body {
 h1 {
     color: var(--orange);
     text-decoration: inherit;
+
+}
+h2 {
+    text-decoration: inherit; 
+    font-size: 1.25rem;
 }
 
 Link {

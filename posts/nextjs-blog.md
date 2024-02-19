@@ -3,6 +3,8 @@ title: 'Making a NextJS Blog Site'
 date: '2024-02-16'
 id: 'nextjs-blog'
 exerpt: 'Creating a spot to post writeups, such as making this website, using NextJS and other technologies'
+author: 'August Meyers'
+authorImg: 'https://raw.githubusercontent.com/meyersa/assets/f7bb5f0924c0bc3406233f3e58f800b7b2e208de/icons/portrait.jpg'
 image: '/images/nextjs.png'
 --- 
 

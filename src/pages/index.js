@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
-import Header from '../components/header'
+import Author from '../components/author' 
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,11 +11,12 @@ export default function Home({ allPostsData }) {
       <div className="content">
         <h2>Blog</h2>
         <ul>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, except, author, authorImg }) => (
             <li key={id}>
               <Link href={`${id}`}>{title}</Link>
               <br />
               <Date dateString={date} />
+              <Author author={{author, authorImg}}/>
             </li>
           ))}
         </ul>
