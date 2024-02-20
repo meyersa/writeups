@@ -1,7 +1,5 @@
 --- 
 title: 'Making a NextJS Blog Site' 
-date: '2024-02-20'
-id: 'nextjs-blog'
 exerpt: 'Creating a spot to post writeups, such as making this website, using NextJS and other technologies'
 image: '/images/nextjs.png'
 --- 
