@@ -25,10 +25,8 @@ export default function Layout({ children, data }) {
         <meta property="og:title" content={siteTitle} key="title" />
         <title>{siteTitle}</title>
       </Head>
-      <div>
-        <Header />
-        <main>{children}</main>
-      </div>
+      <Header />
+      <main>{children}</main>
       <Footer />
     </div>
   );

@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 20vw;
     padding-top: 1rem;
     padding-bottom: 1rem;
     
@@ -14,4 +13,11 @@
     width: 5rem;
     border-radius: var(--rounding);
 
+}
+
+@media (min-width: 600px) {
+    .container .inside {
+        margin-right: 1rem;
+    
+    }
 }
