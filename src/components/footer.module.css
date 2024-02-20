@@ -4,8 +4,8 @@
     width: var(--text-width);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     height: 10vh;
     background: var(--light-grey);
 
