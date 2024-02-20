@@ -4,7 +4,7 @@
     --orange: #FCA726;
     --dark-blue: #458ABF;
     --light-blue: #1D9DFF;
-    --light-grey: #A6A39F;
+    --light-grey: #f7f3ef;
     --grey: #69737A;
     --dark-grey: #575148;
     --white: #fff;
@@ -62,9 +62,6 @@ Link {
 .content {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    width: var(--text-width);
     margin: 0 auto;
 
 }
@@ -98,6 +95,6 @@ time {
     width: 60%;
     margin: 1em auto;
     margin-top: 2rem;
-    background: var(--dark-blue);
-    
+    background: var(--dark-grey);
+
 }

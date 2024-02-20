@@ -19,14 +19,16 @@ export default function Layout({ children, data }) {
 
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content={siteTitle} key="title" />
         <title>{siteTitle}</title>
       </Head>
       <Header />
-      <main>{children}</main>
+      <div className={styles.container}>
+        {children}
+      </div>
       <Footer />
     </div>
   );

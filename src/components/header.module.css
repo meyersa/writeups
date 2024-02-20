@@ -1,13 +1,16 @@
 .container {
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    width: 80vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
     position: sticky;
     top: 0;
-    background: var(--white);
+    background: var(--light-grey);
     flex-wrap: wrap;
     align-content: center;
     flex-direction: var(--flex-direction);
