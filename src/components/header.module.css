@@ -1,8 +1,7 @@
 .container {
-    padding-right: 10vw;
-    padding-left: 10vw;
-    width: 80vw;
-    margin: 0 auto;
+    padding-right: calc((100vw - var(--text-width)) / 2);
+    padding-left: calc((100vw - var(--text-width)) / 2);
+    width: var(--text-width);
     display: flex;
     justify-content: space-between;
     align-items: center;
