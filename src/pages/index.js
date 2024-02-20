@@ -11,26 +11,26 @@ export default function Home({ allPostsData }) {
     <Layout>
       <div className="content">
         <h2>Welcome to my Blog!</h2>
-        <p>I'm August. I'm currently pursuing a double major in Information Technology and Computer Science with a minor in Math at Central Michigan University. While here, I'm working as a Student Technician for the Office of Information Technology helping support Faculty and Staff with their technology. In my free time I'm either experimenting in my lab learning something new, out exploring the world with my camera, or playing video games (if I have time)</p>
+        <p>I&apos;m August. I&apos;m currently pursuing a double major in Information Technology and Computer Science with a minor in Math at Central Michigan University. While here, I&apos;m working as a Student Technician for the Office of Information Technology helping support Faculty and Staff with their technology. In my free time I&apos;m either experimenting in my lab learning something new, out exploring the world with my camera, or playing video games (if I have time)</p>
         <div className="divider" />
       </div>
       <div className="content">
         <h2 >Latest Posts</h2>
       </div>
-        <ul>
-          {allPostsData.map(({ id, date, title, exerpt, author, authorImg, image }, index) => (
+      <ul>
+        {allPostsData.map(({ id, date, title, exerpt, author, authorImg, image }, index) => (
+          <li key={id}>
             <div className="content">
-              <li key={id}>
-                <Link href={`${id}`}>{title}</Link>
-                <br />
-                <Date dateString={date} />
-                <Image src={image} alt="Cover image" width={500} height={500} style={{ width: '100%', height: '10rem' }} />
-                <p>{exerpt}</p>
-                {index !== allPostsData.length - 1 && <div className="divider" />}
-              </li>
+              <Link href={`${id}`}>{title}</Link>
+              <br />
+              <Date dateString={date} />
+              <Image src={image} alt="Cover image" width={500} height={500} style={{ width: '100%', height: '10rem' }} />
+              <p>{exerpt}</p>
+              {index !== allPostsData.length - 1 && <div className="divider" />}
             </div>
-          ))}
-        </ul>
+          </li>
+        ))}
+      </ul>
     </Layout>
   );
 }
