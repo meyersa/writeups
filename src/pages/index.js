@@ -7,7 +7,6 @@
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
-import Date from '../components/date';
 import Image from 'next/image'
 
 export default function Home({ allPostsData }) {
@@ -27,7 +26,7 @@ export default function Home({ allPostsData }) {
             <div className="content">
               <Link href={`${id}`}>{title}</Link>
               <br />
-              <Date dateString={date} />
+              <p>{date}</p>
               <Image src={image} alt="Cover image" width={500} height={500} style={{ width: '100%', height: '10rem' }} />
               <p>{exerpt}</p>
               {index !== allPostsData.length - 1 && <div className="divider" />}

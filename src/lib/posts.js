@@ -15,26 +15,34 @@ const postsDirectory = path.join(process.cwd(), 'posts');
 // Returns posts sorted by date
 export function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
 
+  const allPostsData = fileNames.filter((fileName) => {
     // Only looking for Markdown files
+    return fileName.match('.*md')
+
+  }).map((fileName) => {
     const id = fileName.replace(/\.md$/, '');
-
     const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
 
+    // Parsing date
+    const dateMs = Date.parse(fs.statSync(fullPath).mtime);
+    const date = (new Date(dateMs)).toUTCString();
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    
     // Using Matter to parse Markdown
     const matterResult = matter(fileContents);
 
     return {
       id,
+      dateMs,
+      date,
       ...matterResult.data,
     };
   });
 
   // Sort func
   return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
+    if (a.dateMs < b.dateMs) {
       return 1;
     } else {
       return -1;
@@ -59,6 +67,9 @@ export async function getPostData(id) {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
+  const dateMs = Date.parse(fs.statSync(fullPath).mtime);
+  const date = (new Date(dateMs)).toUTCString();
+
   const matterResult = matter(fileContents);
 
   const processedContent = await remark()
@@ -68,6 +79,8 @@ export async function getPostData(id) {
 
   return {
     id,
+    date, 
+    dateMs,
     contentHtml,
     ...matterResult.data,
   };

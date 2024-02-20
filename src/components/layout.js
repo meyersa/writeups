@@ -6,7 +6,6 @@
 
 import Head from 'next/head';
 import Header from '../components/header';
-import Link from 'next/link';
 import Footer from '../components/footer';
 import styles from '../components/layout.module.css'
 
@@ -26,7 +25,7 @@ export default function Layout({ children, data }) {
   return (
     <div>
       <Head>
-        <Link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content={siteTitle} key="title" />
         <title>{siteTitle}</title>
       </Head>

@@ -6,7 +6,6 @@
 
 import Layout from '../components/layout';
 import { getAllPostIds, getPostData } from '../lib/posts';
-import Date from '../components/date';
 import Author from '../components/author';
 import Image from 'next/image';
 import Flex from '../components/flex';
@@ -18,7 +17,7 @@ export default function Post({ postData }) {
         <Flex>
           <div className="left">
             <h1>{postData.title}</h1>
-            <Date dateString={postData.date} />
+            <p>{postData.date}</p>
           </div>
           <div className="right">
             <Author author={[postData.author, postData.authorImg, postData.authorLink]} />
