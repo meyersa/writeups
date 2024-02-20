@@ -53,7 +53,11 @@ export function getSortedPostsData() {
 // Returns all posts by ID to be used
 export function getAllPostIds() {
   const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames.map((fileName) => {
+  return fileNames.filter((fileName) => {
+    // Only looking for Markdown files
+    return fileName.match('.*md')
+
+  }).map((fileName) => {
     return {
       params: {
         id: fileName.replace(/\.md$/, ''),
