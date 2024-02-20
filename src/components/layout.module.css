@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     align-content: center;
     width: var(--text-width);
-    
-}
+    min-height: 65vh;
+}  
