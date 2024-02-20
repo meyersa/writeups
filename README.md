@@ -23,3 +23,4 @@ https://github.com/vercel/next-learn/blob/main/basics/api-routes-starter/compone
 - Move layout into appjs? 
 - Add links back to meyersa.com/socials 
 - Utilize asset server
+- Move hardcoded values, eg author, to env or const file
