@@ -24,7 +24,7 @@ export default function Post({ postData }) {
             <Author author={[postData.author, postData.authorImg, postData.authorLink]} />
           </div>
         </Flex>
-        <Image src={postData.image} alt="Cover image" width={500} height={500} style={{ width: '100%', height: '15rem' }} />
+        <Image src={postData.image} alt="Cover image" width={500} height={500} priority={true} style={{ width: '100%', height: '15rem' }} />
         <div className="innerHTML" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
     </Layout>
