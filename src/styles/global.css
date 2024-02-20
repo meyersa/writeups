@@ -2,8 +2,6 @@
 
 :root {
     --orange: #FCA726;
-    --dark-blue: #458ABF;
-    --light-blue: #1D9DFF;
     --light-grey: #f7f3ef;
     --grey: #69737A;
     --dark-grey: #575148;
@@ -62,7 +60,21 @@ Link {
 .content {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+
+}
+:is(p) :is(img) {
+    display: flex;
+    align-content: center;
+    padding: 1rem;
+
+}
+.innerHTML img {
+    max-height: 30rem; 
+    max-width: 80%;
+    box-shadow: .25em .25em .25em var(--light-grey);
+    margin: 1rem; 
+    margin: 0 auto; 
 
 }
 ul {
@@ -96,5 +108,13 @@ time {
     margin: 1em auto;
     margin-top: 2rem;
     background: var(--dark-grey);
+
+}
+blockquote {
+    background: var(--light-grey);
+    padding-top: 0.06rem;
+    padding-bottom: 0.06rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 }
