@@ -3,13 +3,12 @@
     padding-left: calc((100vw - var(--text-width)) / 2);
     width: var(--text-width);
     display: flex;
-    justify-content: space-between;
+    justify-content: var(--flex-justify);
     align-items: center;
     position: sticky;
     top: 0;
     background: var(--light-grey);
     flex-wrap: wrap;
-    align-content: center;
     flex-direction: var(--flex-direction);
     height: 15vh;
 

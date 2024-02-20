@@ -9,13 +9,16 @@
     --width: 90vw;
     --flex-direction: row;
     --text-width: 60em;
+    --flex-justify: space-between; 
 
 }
 
+/* Small format */
 @media (max-width: 600px) {
     :root {
         --flex-direction: column;
         --text-width: 80vw;
+        --flex-justify: center; 
 
     }
 }
