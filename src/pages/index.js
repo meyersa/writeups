@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
               <Link href={`${id}`}>{title}</Link>
               <br />
               <p>{date}</p>
-              <Image src={image} alt="Cover image" width={500} height={500} style={{ width: '100%', height: '10rem' }} />
+              <Image src={image} alt="Cover image" width={500} height={500} priority={true} style={{ width: '100%', height: '10rem' }} />
               <p>{exerpt}</p>
               {index !== allPostsData.length - 1 && <div className="divider" />}
             </div>
