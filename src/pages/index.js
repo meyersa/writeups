@@ -1,9 +1,7 @@
-import Head from 'next/head';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
-import Author from '../components/author'
 import Image from 'next/image'
 
 export default function Home({ allPostsData }) {
