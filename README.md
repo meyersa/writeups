@@ -16,3 +16,10 @@ So I can have a better understanding of what I've done by explaining it
 4. Auto-re-build the image when new pushes are made 
 
 https://github.com/vercel/next-learn/blob/main/basics/api-routes-starter/components/layout.js
+
+## Todo 
+
+- Move to k8 mesh 
+- Move layout into appjs? 
+- Add links back to meyersa.com/socials 
+- Utilize asset server

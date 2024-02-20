@@ -1,3 +1,9 @@
+/* 
+ * Component that defines the structure of a page + head options. 
+ * Title is optionally passed in and added to the og site title
+ * This should probably just be moved into _app.js since it is already forced in basically.
+ */
+
 import Head from 'next/head';
 import Header from '../components/header';
 import Link from 'next/link';

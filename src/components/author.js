@@ -1,3 +1,7 @@
+/*
+ * Provides the small text/image for author on posts page
+ */
+
 import Image from 'next/image';
 import styles from './author.module.css';
 import Link from 'next/link';

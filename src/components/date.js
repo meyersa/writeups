@@ -1,3 +1,7 @@
+/* 
+ * Provides time parsing for when date is used. From NextJS docs
+ */
+
 import { parseISO, format } from 'date-fns';
 
 export default function Date({ dateString }) {

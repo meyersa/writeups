@@ -1,3 +1,9 @@
+/* 
+ * Slug matching page for all markdown posts
+ * Uses the internal API to render pages when called
+ * Uses the internal API to get all page data when rendered originally
+ */
+
 import Layout from '../components/layout';
 import { getAllPostIds, getPostData } from '../lib/posts';
 import Date from '../components/date';

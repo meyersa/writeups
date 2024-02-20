@@ -1,3 +1,9 @@
+/*
+ * Home page 
+ * Has a block to dynamically show the last markdown pages by date 
+ * Also has an about me page above that
+ */
+
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';

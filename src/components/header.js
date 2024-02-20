@@ -1,3 +1,7 @@
+/* 
+ * Header on page
+ */ 
+
 import styles from './header.module.css';
 import Link from 'next/link';
 
