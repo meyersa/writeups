@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  output: 'standaone',
+  output: 'standalone',
   images: {
     remotePatterns: [
       {
